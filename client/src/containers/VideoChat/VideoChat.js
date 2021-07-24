@@ -11,7 +11,9 @@ import TextField from "@material-ui/core/TextField";
 import AssignmentIcon from "@material-ui/icons/Assignment";
 import PhoneIcon from "@material-ui/icons/Phone";
 
-const socket = io.connect("http://localhost:3001");
+const url = process.env.PUBLIC_URL;
+
+const socket = io.connect(url || "http://localhost:3001");
 
 const VideoChat = () => {
   const [me, setMe] = useState("");

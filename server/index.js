@@ -1,13 +1,17 @@
 const express = require("express");
+
+const PORT = process.env.PORT || 3001;
+
 const app = express();
+
 const path = require("path");
 
 const http = require("http");
 const server = http.createServer(app);
+
 const io = require("socket.io")(server, {
   cors: {
-    origin: "http://localhost:3000",
-
+    origin: process.env.PUBLIC_URL || "http://localhost:3000",
     methods: ["GET", "POST"],
   },
 });
@@ -32,16 +36,16 @@ io.on("connection", (socket) => {
   });
 });
 
-app.use(express.static(path.resolve(__dirname, "../../client/build")));
+app.use(express.static(path.resolve(__dirname, "../client/build")));
 
 app.get("/api", (req, res) => {
-  res.json({ message: "EMR server." });
+  res.end("EMR API.");
 });
 
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../../client/build", "index.html"));
+  res.sendFile(path.resolve(__dirname, "../client/build", "index.html"));
 });
 
-server.listen(3001, () =>
-  console.log("video chat server is running on port 3001")
+server.listen(PORT, () =>
+  console.log(`Video chat server is running on port ${PORT}`)
 );
