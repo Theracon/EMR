@@ -1,0 +1,51 @@
+.UploadImage {
+  margin: 50px auto 100px auto;
+  padding: 1em;
+  border: 1px solid #2f5d62;
+  border-radius: 20px;
+  width: 50%;
+}
+
+.UploadImage button {
+  border-radius: 50px;
+  padding: 1em 2em;
+  margin-bottom: 50px;
+  margin-right: 0.5em;
+  outline: none;
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+}
+
+.UploadImage button:hover {
+  background: #5e8b7e;
+  color: #dfeeea;
+}
+
+.UploadImage button:disabled {
+  cursor: not-allowed;
+}
+
+.UploadImage img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #2f5d62;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+
+.Container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.Container input[type="file"] {
+  cursor: pointer;
+}
+
+.ButtonHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  margin: 0 auto;
+}

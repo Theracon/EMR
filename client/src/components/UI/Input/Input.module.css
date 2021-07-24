@@ -1,0 +1,54 @@
+.InputDiv {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.Label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.Input {
+  display: block;
+  margin: 0 auto;
+  width: 30vw;
+  padding: 1.5em;
+  border: 1px solid #2f5d62;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.Input:focus,
+.Input:active {
+  outline: none;
+}
+
+.Textarea {
+  display: block;
+  margin: 0 auto;
+  width: 30vw;
+  height: 20vh;
+  padding: 1.5em;
+  border: 1px solid #2f5d62;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.Textarea:focus,
+.Textarea:active {
+  outline: none;
+  box-shadow: 0 0 3px #2f5d62;
+}
+
+.Invalid {
+  border: 1px solid darkred;
+}
+
+@media (max-width: 600px) {
+  .Input,
+  .Textarea {
+    width: 90%;
+  }
+}

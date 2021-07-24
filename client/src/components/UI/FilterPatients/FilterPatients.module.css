@@ -1,0 +1,68 @@
+.Container {
+  position: fixed;
+  width: 55%;
+  height: 3em;
+  top: 40%;
+  left: 1%;
+  z-index: 800;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.Container input,
+.Container select,
+.Container button {
+  display: inline-block;
+  border-radius: 20px;
+  margin: 0.5em 0.2em 0.5em 0.5em;
+  padding: 0.5em 1em;
+  outline: none;
+  border: 1px solid #2f5d62;
+}
+
+.Container Input:focus,
+.Container Input:active,
+.Container select:focus,
+.Container select:active {
+  box-shadow: 0 0 3px #2f5d62;
+}
+
+.Container Input,
+.Container select {
+  width: 10vw;
+}
+
+.Container button {
+  background: #2f5d62;
+  color: #dfeeea;
+  font-family: "Poppins", sans-serif;
+}
+
+.Container i {
+  cursor: pointer;
+  font-size: 2em;
+  color: #2f5d62;
+}
+
+@media (max-width: 600px) {
+  .Container {
+    top: 30vh;
+    width: fit-content;
+    height: 80vh;
+  }
+
+  .Container Input,
+  .Container select {
+    display: block;
+    width: 40vw;
+    margin-left: 0;
+  }
+
+  .Container button {
+    display: block;
+    width: fit-content;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,47 @@
+.Div {
+  width: 100%;
+  height: 3em;
+  margin-bottom: 50px;
+}
+
+.Form {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.Form input {
+  padding: 1.5em;
+  height: 100%;
+  border: 3px solid #2f5d62;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.Form input:focus {
+  box-shadow: none;
+}
+
+.Input {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1.5em;
+  border: 1px solid #2f5d62;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.Input:focus,
+.Input:active {
+  outline: none;
+  box-shadow: 0 0 3px #2f5d62;
+}
+
+@media (max-width: 600px) {
+  .Form {
+    width: 80%;
+  }
+}

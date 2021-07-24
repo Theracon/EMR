@@ -1,0 +1,24 @@
+.Container {
+  width: 100%;
+  height: 100%;
+}
+
+.DisplayDiv {
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1em 1em 1em 0;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.DisplayName {
+  width: fit-content;
+  height: fit-content;
+  font-family: "Poppins", sans-serif;
+}
+
+.DisplayName span {
+  text-decoration: underline;
+}

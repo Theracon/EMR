@@ -1,0 +1,94 @@
+.PatientDashboard {
+  width: 100%;
+  height: 100vh;
+}
+
+.ChatButton {
+  position: fixed;
+  bottom: 10vh;
+  right: 5vw;
+  display: flex;
+  align-items: center;
+  color: #2f5d62;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  transition: transform 500ms;
+  z-index: 100;
+}
+
+.ChatButton:hover,
+.ChatButton:focus,
+.ChatButton:active {
+  opacity: 0.9;
+  transform: scale(1.2);
+}
+
+.ChatButton i {
+  font-size: 50px;
+  margin-left: 5px;
+}
+
+.ProfileData {
+  width: 100%;
+  height: fit-content;
+  margin: 2em auto;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 90;
+}
+
+.ProfileDataText {
+  width: 50%;
+  height: fit-content;
+  border: 3px solid #2f5d62;
+  border-radius: 20px;
+  padding: 2em;
+  margin: 2em;
+  z-index: 90;
+}
+
+.ProfileDataText div {
+  width: fit-content;
+  margin: 0 auto 1em auto;
+}
+
+.ProfileDataText div h3 {
+  text-decoration: underline;
+}
+
+.Photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid #2f5d62;
+}
+
+.DisplayDiv {
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1em 1em 1em 0;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.DisplayName {
+  width: fit-content;
+  height: fit-content;
+  font-family: "Poppins", sans-serif;
+}
+
+.DisplayName span {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .ProfileDataText {
+    width: 98%;
+  }
+}

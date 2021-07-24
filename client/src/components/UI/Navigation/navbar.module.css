@@ -1,0 +1,59 @@
+.HeaderDiv {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HeaderText {
+  letter-spacing: -2px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  color: #dfeeea;
+  margin-right: 5px;
+  cursor: pointer;
+  height: 100%;
+}
+
+.Logo {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  height: 100%;
+}
+
+.List {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.List li {
+  list-style: none;
+  text-decoration: none;
+  margin: 0 1em;
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+.Active {
+  color: #2f5d62;
+  border-bottom: 3px solid #dfeeea;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .List {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .List li {
+    width: 100%;
+    display: flex;
+    margin: 1em auto;
+  }
+}

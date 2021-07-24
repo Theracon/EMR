@@ -1,0 +1,56 @@
+.Container {
+  width: 80%;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.Container h1 {
+  font-family: "Encode Sans SC", sans-serif;
+  padding: 0.5em;
+  letter-spacing: 2px;
+}
+
+.Container h1,
+.Container p {
+  font-weight: bold;
+}
+
+.ContentHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  margin: 5em 0;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  margin: 0 12px;
+  padding: 1em;
+  border: 1px solid #a7c4bc;
+  border-radius: 10px;
+  box-shadow: 0 0 2px #5e8b7e;
+  background: transparent;
+}
+
+.Icon {
+  font-size: 2em;
+}
+
+@media (max-width: 600px) {
+  .ContentHolder {
+    flex-direction: column;
+    min-height: 200vh;
+  }
+
+  .Content {
+    width: 100%;
+    margin: 16px auto;
+    padding: 1em;
+  }
+}

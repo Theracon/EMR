@@ -1,0 +1,63 @@
+.Patient {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 20vh;
+  padding: 1em;
+  margin: 1em auto;
+  border: 3px solid #5e8b7e;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+.Patient h5 {
+  font-weight: bold;
+}
+
+.Header {
+  text-decoration: underline;
+}
+
+.IconsHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.IconsHolderSpan i {
+  font-size: 2em;
+  margin: 2px 0;
+  color: #2f5d62;
+  transition: transform 300ms;
+}
+
+.IconsHolderSpan i:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+  .Patient {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .Patient h5 {
+    margin-top: 5px;
+  }
+
+  .Patient p:nth-of-type(1) {
+    margin: 10px auto 0px auto;
+  }
+
+  .IconsHolderSpan i {
+    transform: scale(1.5);
+    margin: 0.5em auto;
+  }
+}

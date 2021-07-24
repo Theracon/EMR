@@ -1,0 +1,29 @@
+.Container {
+  margin-bottom: 10em;
+}
+
+.Profile {
+  width: 30vw;
+  border: 1px solid #2f5d62;
+  border-radius: 20px;
+  padding: 1em;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.Profile div {
+  margin: 20px auto;
+}
+
+.Profile div h3 {
+  text-decoration: underline;
+}
+
+.Input {
+  display: block;
+  margin: 0 auto;
+  width: 30vw;
+  height: fit-content;
+  border-radius: 20px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,148 @@
+.App {
+  text-align: center;
+  max-width: 728px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.AppSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.Main {
+  padding: 10px;
+  height: 80vh;
+  margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.Main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.Main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+.Main::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+.Form {
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  background: #000;
+  width: 100%;
+  max-width: 728px;
+  display: flex;
+  font-size: 1.5rem;
+  padding: 10px 0;
+}
+
+.FormButton {
+  width: 12%;
+  background-color: transparent;
+  border: none;
+}
+
+.FormButtonIcon {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.Input {
+  width: 100%;
+  font-size: 1.5rem;
+  background: #fff;
+  outline: none;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+
+.Paragraph {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.Message {
+  display: flex;
+  align-items: center;
+}
+
+.Sent {
+  flex-direction: row-reverse;
+}
+
+.Sent::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #0b93f6;
+}
+
+.Received::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #e5e5ea;
+}
+
+.Sent p {
+  color: white;
+  background: #0b93f6;
+  align-self: flex-end;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 5px 10px;
+  min-width: 30%;
+  max-width: 80%;
+}
+
+.Received p {
+  background: #e5e5ea;
+  color: black;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 5px 10px;
+  min-width: 30%;
+  max-width: 80%;
+}
+
+.MessageSender {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+}
+
+.MessageText {
+  display: block;
+  text-align: left;
+}
+
+.MessageDateTimeHolder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7px;
+  font-size: 0.7em;
+  opacity: 0.7;
+}
