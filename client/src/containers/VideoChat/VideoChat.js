@@ -11,7 +11,7 @@ import TextField from "@material-ui/core/TextField";
 import AssignmentIcon from "@material-ui/icons/Assignment";
 import PhoneIcon from "@material-ui/icons/Phone";
 
-const url = process.env.PUBLIC_URL;
+const url = "https://emr-prod.herokuapp.com";
 
 const socket = io.connect(url || "http://localhost:3001");
 

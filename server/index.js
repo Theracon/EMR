@@ -9,9 +9,11 @@ const path = require("path");
 const http = require("http");
 const server = http.createServer(app);
 
+const url = "https://emr-prod.herokuapp.com";
+
 const io = require("socket.io")(server, {
   cors: {
-    origin: process.env.PUBLIC_URL || "http://localhost:3000",
+    origin: url || "http://localhost:3000",
     methods: ["GET", "POST"],
   },
 });
