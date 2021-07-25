@@ -213,7 +213,7 @@ const VideoChat = () => {
             }}
           >
             Give your ID to the user who wants to call you, or paste theirs
-            below to call them.
+            below to call them. Can't see your ID? Just refresh the page.
           </small>
           <br />
 
