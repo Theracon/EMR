@@ -1,15 +1,11 @@
 const express = require("express");
-
-const PORT = process.env.PORT || 3001;
-
 const app = express();
-
 const path = require("path");
-
 const http = require("http");
 const server = http.createServer(app);
 
 const url = "https://emr-prod.herokuapp.com";
+const PORT = process.env.PORT || 3001;
 
 const io = require("socket.io")(server, {
   cors: {
@@ -49,5 +45,5 @@ app.get("*", (req, res) => {
 });
 
 server.listen(PORT, () =>
-  console.log(`Video chat server is running on port ${PORT}`)
+  console.log(`EMR Video-Chat server now running at port ${PORT}`)
 );
