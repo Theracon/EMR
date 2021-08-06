@@ -8,13 +8,9 @@ import * as healthWorkersActionCreators from "./store/action-creators/healthWork
 import * as patientsActionCreators from "./store/action-creators/patients";
 import * as encountersActionCreators from "./store/action-creators/encounters";
 
-import Navbar from "./components/UI/Navigation/navbar";
-import Homepage from "./components/Homepage/Homepage";
 import Signup from "./containers/Authentication/Signup";
 import Login from "./containers/Authentication/Login";
 import Logout from "./containers/Authentication/Logout";
-import HealthWorkerProfile from "./components/Profiles/Forms/HealthWorkerProfile";
-import PatientProfile from "./components/Profiles/Forms/PatientProfile";
 import HWDashboard from "./containers/Dashboards/HealthWorkerDashboard/HealthWorkerDashboard";
 import PatientDashboard from "./containers/Dashboards/PatientDashboard/PatientDashboard";
 import Encounter from "./containers/Encounter/Encounter";
@@ -22,6 +18,10 @@ import Encounters from "./containers/Encounters/Encounters";
 import Messenger from "./containers/Messenger/Messenger";
 import VideoChat from "./containers/VideoChat/VideoChat";
 
+import Homepage from "./components/Homepage/Homepage";
+import Navbar from "./components/UI/Navigation/navbar";
+import HealthWorkerProfile from "./components/Profiles/Forms/HealthWorkerProfile";
+import PatientProfile from "./components/Profiles/Forms/PatientProfile";
 import Backdrop from "./components/UI/Backdrop/Backdrop";
 import Spinner from "./components/UI/Spinner/Spinner";
 

@@ -8,7 +8,7 @@ import updateObject from "../../shared/utils/updateObject";
 import checkValidity from "../../shared/utils/formValidation";
 import * as actionCreators from "../../store/action-creators/authentication";
 
-class Signup extends React.Component {
+class Login extends React.Component {
   state = {
     form: {
       email: {
@@ -159,4 +159,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Signup);
+export default connect(mapStateToProps, mapDispatchToProps)(Login);
